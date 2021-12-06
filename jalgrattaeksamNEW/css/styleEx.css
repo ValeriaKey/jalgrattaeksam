@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, .textbox {
+    background-color: #fff;
+    overflow-y: scroll;
+}
+/* Navigation bar */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px 20px;
+    background-color: rgba(0, 0, 0, 0.60);
+}
+.nav__menu {
+    display: flex;
+    list-style: none;
+}
+.nav__item {
+    align-self: center;
+}
+
+.nav__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-right: 1rem;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    position: relative;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+
+.nav__link:after {
+    content: "";
+    position: absolute;
+    background-color: #0b9671;
+    height: 3px;
+    width: 0%;
+    left:25%;
+    bottom:-10px;
+    transition: 0.3s;
+}
+.nav__link:hover:after {
+    width: 50%;
+    text-align:center;
+}
+
+/* Header */
+
+.header {
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7) ), url(../img/bycicle.jpg);
+   min-height: 400px;
+   background-position-y: 60%;
+   background-size: cover;
+   border-radius: 0px 0px 30px 30px;
+}
+
+.header h1 {
+    font-size: 5rem;
+    color: #fff;
+    text-align: center;
+    line-height: 300px;
+}
+.container {
+    width: 90%;
+    margin: 4rem auto;
+}
+
+.container table {
+    margin: auto;
+}
+
+/* Registreerimine - vorm */
+.login-box {
+    width: 280px;
+    position:absolute;
+    top:60%;
+    left:40%;
+}
+
+.login-box h1 {
+    float:left;
+    font-size:40px;
+    border-bottom: 3px solid #37cfa7;
+    margin-bottom: 20px;
+    padding: 7px 0;
+}
+
+.textbox {
+    width: 100%;
+    overflow: hidden;
+    font-style: 20px;
+    padding: 8px 0;
+    margin: 8px 0px;
+    border-bottom: 2px solid #37cfa7 !important;
+    border: none;
+    outline: none;
+}
+.textbox::placeholder {
+    text-transform: uppercase;
+    padding-left: 5px;
+    color: #042e23a2;
+}
+.nupp {
+    width: 100%;
+    padding: 8px 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 2px solid #0b9671;
+    transition: ease 3s;
+}
+.nupp2 {
+    padding: 4px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 2px solid #0b9671;
+    transition: ease 3s;
+}
+.textbox2 {
+    padding: 4px 20px;
+    border-radius: 10px;
+    border: 2px solid #0b9671;
+    margin-left: 10px;
+    outline: none;
+    font-weight: bold;
+}
+
+.nimitabelis {
+    text-transform: uppercase;
+    padding-left: 10px;
+    font-weight: bold;
+    transition: ease 0.5s;
+}
+.nimitabelis2 {
+    text-transform: uppercase;
+    padding-right: 5px;
+    font-weight: bold;
+}
+.korras {
+    padding: 4px 15px;
+    color: #0b9671;
+    text-decoration:none;
+    text-transform: uppercase;
+    transition: ease 0.5s;
+}
+
+.ebaone {
+    padding: 4px 15px;
+    color: #5e0909;
+    text-decoration:none;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+.p-korras {
+    padding: 4px 15px;
+    color: #00ce97;
+    text-decoration:none;
+    text-transform: uppercase;
+    margin-left: 10px;
+    font-weight: bold;
+    border-bottom: 2px solid #00ce97;
+}
+.nupp:hover {
+    background-color: rgba(0, 0, 0, 0.596);
+    color: #54ECC4;
+}
+.korras:hover, .ebaone:hover, .nupp2:hover {
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.36);
+    transition: ease 0.5s;
+}
+
+.lubadeleht td {
+    padding: 15px;
+    font-size: 18px;
+    text-align:center;
+}
+.lisanimi {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.60);
+    color: rgba(255, 255, 255, 0.295);
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    padding: 15px 0px;
+    transition: ease 2s;
+}
+
+.footer2 {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.60);
+    color: rgba(255, 255, 255, 0.295);
+    padding: 15px 0px;
+    transition: ease 2s
+}
+.footer2:hover {
+    color:#fff;
+    transition: ease 1s;
+    }
+.footer:hover {
+color:#fff;
+transition: ease 1s;
+}
+
+.warn {
+    text-align:center;
+    font-size: 25px;
+}
+
+#adm-btn {
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+.adm {
+    color: #fff;
+}
